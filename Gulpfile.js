@@ -68,3 +68,7 @@ gulp.task('watch', function () {
   gulp.watch(scripts, ['scripts']);
 });
 
+gulp.task('build', [
+    'sass', 'pug', 'scripts', 'images'
+]);
+
