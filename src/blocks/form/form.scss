@@ -53,6 +53,9 @@
     position: relative;
     top: 40px;
     @include md(top, 10px);
+    &:hover {
+      opacity: 0.9;
+    }
   }
 
 
