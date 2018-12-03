@@ -1,0 +1,99 @@
+.menu {
+  background: #7cacd4;
+  @include sm(background, none);
+  &__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  &__download {
+    width: 186px;
+    height: 36px;
+    border: 2px solid #fff;
+    margin: 5px 0 0;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 20px;
+    color: #fff;
+    line-height: 36px;
+    display: block;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    @include sm(display, none);
+    @include md1040(display, none);
+  }
+  &__card {
+    display: block;
+    float: right;
+    background: url(../images/cart.png) no-repeat 0 0;
+    width: 26px;
+    height: 22px;
+    margin: 20px 0 0;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    @include sm(position, absolute);
+    @include sm(margin, 0);
+    @include sm(top, 15px);
+    @include sm(right, 10px);
+    @include sm(background, url(../images/cart_mobile.png) no-repeat 0 0);
+    @include sm(background-size, 24.5px auto);
+    span {
+      margin-top: -15px;
+      display: block;
+      @include sm(margin-top, -12px);
+      @include sm(color, #8baad1);
+      @include sm(font-size, 13px);
+    }
+  }
+  ul {
+    @include sm(background, #7cacd4);
+    @include sm(position, absolute);
+    @include sm(z-index, 100);
+    @include sm(display, none);
+    @include sm(width, 100%);
+    @include sm(top, 45px);
+    @include sm(left, 0);
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      float: left;
+      @include sm(float, none);
+      @include sm(padding-left, 15px);
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 700;
+        display: block;
+        margin-right: 59px;
+        padding: 19px 0;
+        @include lg(margin-right, 30px);
+        @include md(margin-right, 10px);
+      }
+
+    }
+    li:last-child a {
+      margin-right: 30px;
+    }
+  }
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  &__icon {
+    @include sm(position, absolute);
+    @include sm(top, 15px);
+    @include sm(left, 10px);
+    @include sm(background, url(../images/icon.png) no-repeat 0 0);
+    @include sm(background-size, 20px auto);
+    @include sm(width, 20px);
+    @include sm(height, 18px);
+    @include sm(cursor, pointer);
+  }
+}

@@ -1,0 +1,67 @@
+.header {
+  padding: 23px 0 28px;
+  height: 51px;
+  @include sm(height, 30px);
+  @include sm(padding, 10px 0);
+  &__container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  &__logo {
+    display: block;
+    float: left;
+    margin-right: 250px;
+    @include lg(margin-right, 150px);
+    @include md1040(margin-right, 70px);
+    @include md(margin-right, 20px);
+    @include sm(position, absolute);
+    @include sm(left, 50%);
+    @include sm(margin-left, -15px);
+    @include sm(margin-right, 0);
+    img {
+      height: 50px;
+      @include sm(height, 30px);
+    }
+  }
+  &__list {
+    @include sm(display, none);
+    padding: 0;
+    margin: 0;
+    li {
+      font-size: 12px;
+      float: left;
+      list-style: none;
+      padding: 10px 82px 0 0;
+      @include lg(padding-right, 35px);
+      @include md(padding-right, 20px);
+      color: #4c4c4c;
+      line-height: 1.4;
+      span {
+        font-weight: 700;
+        font-size: 16px;
+        display: block;
+      }
+    }
+  }
+  &__link {
+    text-transform: uppercase;
+    color: #464646;
+    font-size: 12px;
+    border-bottom: 1px dotted #9e9e9e;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 20px 0 0;
+    display: inline-block;
+    @include sm(display, none);
+  }
+  &__search {
+    display: inline-block;
+    @include sm(display, none);
+    width: 20px;
+    height: 20px;
+    background: url(../images/search.png) no-repeat 0 0;
+    float: right;
+    margin-top: 20px;
+  }
+}

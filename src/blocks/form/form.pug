@@ -1,0 +1,39 @@
+.form
+    .form__container
+        h2.form__h2 НЕ НАШЛИ ПОДХОДЯЩЕГО РЕШЕНИЯ?
+        .form__p Расскажите нам о вашем бизнесе и мы сами подберем для вас оптимальное решение с необходимым набором модулей.
+        form(action="#", method="post")
+            select
+                option(value="-1") Вид бизнеса
+                option(value="1") Вид бизнеса 1
+                option(value="2") Вид бизнеса 2
+            div
+                .form__col
+                    select
+                        option(value="-1") Размер города
+                        option(value="1") 1
+                        option(value="2") 2
+                .form__col
+                    select
+                        option(value="-1") Кол-во людей
+                        option(value="1") 1
+                        option(value="2") 2
+                        option(value="3") 3
+                        option(value="4") 4
+                        option(value="5") 5
+                        option(value="6") 6
+                        option(value="7") 7
+                        option(value="8") 8
+                        option(value="9") 9
+                        option(value="10") 10
+                .form__col
+                    select
+                        option(value="-1") Подъемники
+                        option(value="1") Подъемник 1
+                        option(value="2") Подъемник 2
+                .form__col
+                    select
+                        option(value="-1") Кол-во точек
+                        option(value="1") Кол-во точек 1
+                        option(value="2") Кол-во точек 2
+            button.form__btn подобрать

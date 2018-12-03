@@ -1,0 +1,81 @@
+.help {
+  padding-top: 85px;
+  @include md1040(padding-top, 45px);
+  &__h2 {
+    font-size: 32px;
+    margin: 0;
+    @include md1040(font-size, 24px);
+    @include md1040(padding-bottom, 40px);
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  ul {
+    max-width: $container-width;
+    margin: 0 auto 95px;
+    padding: 0;
+    @include md1040(margin-bottom, 15px);
+    @include lg(text-align, center);
+    @include md1040(max-width, 320px);
+    &:after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+  }
+  li {
+    list-style: none;
+    float: left;
+    min-height: 40px;
+    @include lg(display, inline-block);
+    @include lg(vertical-align, middle);
+    @include lg(float, none);
+    @include lg(text-align, left);
+    @include md1040(margin-left, 0);
+    @include md1040(background-size, auto 35px);
+    @include md1040(background-position, 50% 0);
+    @include md1040(padding, 55px 0 30px);
+    @include md1040(border-right, none);
+    @include md1040(text-align, center);
+    @include md1040(font-size, 14px);
+  }
+  &__li1 {
+    background: url(../images/help1.png) no-repeat 0 0;
+    border-right: 1px solid #d6dce1;
+    background-size: auto 30px;
+    padding: 0 60px 0 50px;
+    width: 170px;
+    @include lg(margin-left, 10px);
+    @include lg(padding-right, 20px);
+
+  }
+  &__li2 {
+    background: url(../images/help2.png) no-repeat 0 0;
+    border-right: 1px solid #d6dce1;
+    background-size: auto 30px;
+    margin-left: 60px;
+    padding: 0 50px;
+    width: 140px;
+    @include lg(margin-left, 20px);
+    @include lg(padding-right, 20px);
+  }
+  &__li3 {
+    background: url(../images/help3.png) no-repeat 0 5px;
+    border-right: 1px solid #d6dce1;
+    background-size: auto 30px;
+    margin-left: 85px;
+    padding: 0 60px 0 50px;
+    width: 140px;
+    @include lg(margin-left, 20px);
+    @include lg(padding-right, 20px);
+  }
+  &__li4 {
+    background: url(../images/help4.png) no-repeat 0 5px;
+    background-size: auto 30px;
+    margin-left: 60px;
+    padding: 0 0 0 50px;
+    width: 140px;
+    @include lg(margin-left, 20px);
+  }
+
+}

@@ -1,0 +1,161 @@
+.solutions {
+  background: #87c8f3;
+  padding: 95px 0 0;
+  @include sm(padding, 35px 0 0);
+  &__container {
+    width: $container-width;
+    padding-bottom: 117px;
+    @include sm(width, 768px !important);
+    @include sm(padding-bottom, 70px !important);
+    &:after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+  }
+  &__h2 {
+    font-size: 32px;
+    @include sm(font-size, 24px);
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    line-height: 1.4;
+    margin: 0;
+    padding-bottom: 50px;
+    @include sm(padding-bottom, 30px);
+  }
+  &__scroll {
+    max-width: $container-width;
+    margin: 0 auto;
+    overflow: auto;
+  }
+  &__container {
+    width: $container-width;
+  }
+  &__item {
+    text-align: center;
+
+  }
+  &__item1, &__item3 {
+    width: 373px;
+    margin: 90px 0 0;
+    min-height: 490px;
+    background: #fff;
+    float: left;
+    box-shadow: 0 0 15px 2px #79b7de;
+    position: relative;
+    @include sm(width, 235px);
+    @include sm(min-height, 290px);
+    &:after {
+      content: "";
+      width: 100%;
+      height: 10px;
+      background: url(../images/solutions_bg1.png) no-repeat 0 0;
+      background-size: 100% auto;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }
+  &__item3 {
+    .solutions__ul {
+      margin-bottom: 0;
+    }
+    .solutions__ul li:last-child {
+      border-bottom: none;
+    }
+  }
+  &__item1 {
+    margin-right: 27px;
+    position: relative;
+    @include sm(margin-left, 5px);
+  }
+  &__title {
+    background: #7fccf7;
+    padding: 37px 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    @include sm(padding, 25px);
+    @include sm(font-size, 12px);
+    @include sm(margin-bottom, 0);
+  }
+  &__item2 {
+    width: 370px;
+    min-height: 590px;
+    background: #fff;
+    float: left;
+    margin-right: 27px;
+    box-shadow: 0 0 15px 2px #79b7de;
+    position: relative;
+    @include sm(width, 235px);
+    @include sm(min-height, 440px);
+    .solutions__title {
+      background: #56b2ed;
+    }
+    &:after {
+      content: "";
+      width: 100%;
+      height: 23px;
+      background: url(../images/solutions_bg2.png) no-repeat 0 0;
+      background-size: 100% auto;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+
+  }
+  &__ul {
+    margin: 0 40px 35px;
+    padding: 0;
+    @include sm(margin, 0 15px 30px);
+    li {
+      list-style: none;
+      background: url(../images/list.png) no-repeat 100% 17px;
+      background-size: 30px auto;
+      min-height: 31px;
+      line-height: 31px;
+      font-size: 16px;
+      padding: 15px 30px 15px 0;
+      border-bottom: 1px solid #d6dce1;
+      text-align: left;
+      @include sm(padding, 9px 30px 9px 0);
+      @include sm(font-size, 12px);
+      @include sm(background-size, 25px auto);
+      @include sm(background-position, 100% 9px);
+    }
+  }
+  &__btn {
+    display: block;
+    width: 170px;
+    height: 40px;
+    border-radius: 20px;
+    background: #ff5757;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 0 auto 20px;
+    @include sm(margin-bottom, 10px);
+    &:hover, &:active {
+      opacity: 0.9;
+    }
+  }
+  &__link {
+    font-size: 14px;
+    color: #464646;
+    border-bottom: 1px dotted #9e9e9e;
+    text-decoration: none;
+    margin-bottom: 15px;
+    display: inline-block;
+    &:hover, &:active {
+      border-bottom: none;
+    }
+  }
+}
