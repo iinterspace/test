@@ -53,13 +53,9 @@
     height: 100%;
     background: #dbe8f3 url(../images/arrow1.png) 50% center no-repeat;
     background-size: 8px auto;
-}
-@media (max-width: 850px) {
-    .selectBox-dropdown .selectBox-arrow {
-        width: 20px;
-        background: url(../images/arrow1.png) 50% center no-repeat;
-        background-size: 7px auto;
-    }
+    @include md(width, 20px);
+    @include md(background, url(../images/arrow1.png) 50% center no-repeat);
+    @include md(background-size, 7px auto);
 }
 
 /* Dropdown menu */
@@ -70,6 +66,8 @@
     min-height: 1em;
     background: #dbe8f3;
     overflow: auto;
+    max-width: 765px;
+    @include md(max-width, 300px);
     -webkit-overflow-scrolling: touch;
 }
 

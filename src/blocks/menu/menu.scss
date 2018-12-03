@@ -21,8 +21,12 @@
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    overflow: hidden;
     @include sm(display, none);
     @include md1040(display, none);
+  }
+  &__download:active, &__download:hover {
+    outline: none;
   }
   &__card {
     display: block;
@@ -74,6 +78,10 @@
         padding: 19px 0;
         @include lg(margin-right, 30px);
         @include md(margin-right, 10px);
+      }
+      a:hover, a:focus {
+        outline: none;
+        border: none;
       }
 
     }
