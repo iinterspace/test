@@ -17,12 +17,14 @@ html(lang="ru")
         link(rel="apple-touch-icon", sizes="48x48", href="images/favicon/icon-48x48.png")
         link(rel="apple-touch-icon", sizes="64x64", href="images/favicon/icon-64x64.png")
     body
-        include blocks/header/header.pug
-        include blocks/menu/menu.pug
-        include blocks/system/system.pug
-        include blocks/help/help.pug
-        include blocks/solutions/solutions.pug
-        include blocks/form/form.pug
+        header
+            include blocks/header/header.pug
+        main
+            include blocks/menu/menu.pug
+            include blocks/system/system.pug
+            include blocks/help/help.pug
+            include blocks/solutions/solutions.pug
+            include blocks/form/form.pug
         script(src="js/app.js")
 
 

@@ -14,8 +14,10 @@
     max-width: $container-width;
     margin: 0 auto 95px;
     padding: 0;
+    display: flex;
     @include md1040(margin-bottom, 15px);
     @include lg(text-align, center);
+    @include lg(display, block);
     @include md1040(max-width, 320px);
     &:after {
       content: "";
@@ -25,8 +27,7 @@
   }
   li {
     list-style: none;
-    float: left;
-    min-height: 40px;
+     min-height: 40px;
     @include lg(display, inline-block);
     @include lg(vertical-align, middle);
     @include lg(float, none);

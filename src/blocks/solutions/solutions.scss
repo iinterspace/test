@@ -5,6 +5,7 @@
   &__container {
     width: $container-width;
     padding-bottom: 117px;
+    display: flex;
     @include sm(width, 768px !important);
     @include sm(padding-bottom, 70px !important);
     &:after {
@@ -41,7 +42,6 @@
     margin: 90px 0 0;
     min-height: 490px;
     background: #fff;
-    float: left;
     box-shadow: 0 0 15px 2px #79b7de;
     position: relative;
     @include sm(width, 235px);
@@ -87,7 +87,6 @@
     width: 370px;
     min-height: 590px;
     background: #fff;
-    float: left;
     margin-right: 27px;
     box-shadow: 0 0 15px 2px #79b7de;
     position: relative;
