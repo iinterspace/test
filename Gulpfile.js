@@ -44,7 +44,7 @@ gulp.task('pug', function() {
         .pipe(gulp.dest("./dist/"));
 });
 
-var scripts = ['./src/scripts/*.js', "./src/blocks/**/*.js"];
+var scripts = ['./src/scripts/jquery/dist/jquery.min.js', './src/scripts/*.js', "./src/blocks/**/*.js"];
 
 gulp.task('scripts', function() {
     return gulp.src(scripts)
