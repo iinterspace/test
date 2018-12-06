@@ -5,7 +5,6 @@
 body {
   overflow-x: hidden;
 }
-<<<<<<< HEAD
 .btn {
   display: block;
   border: none;
@@ -21,15 +20,4 @@ body {
   overflow: hidden;
   font-weight: 700;
   color: #fff;
-=======
-.container{
-  @include wrapper;
-  .cols{
-    @include  row-flex;
-    >div{
-      @include  col;
-      @include size(12);
-    }
-  }
->>>>>>> e9fce7371aa873950a4538e01f21d27a16f7df91
 }
