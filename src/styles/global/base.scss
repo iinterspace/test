@@ -5,3 +5,13 @@
 body {
   overflow-x: hidden;
 }
+.container{
+  @include wrapper;
+  .cols{
+    @include  row-flex;
+    >div{
+      @include  col;
+      @include size(12);
+    }
+  }
+}

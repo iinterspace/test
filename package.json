@@ -9,6 +9,7 @@
     "pug": "^2.0.3"
   },
   "devDependencies": {
+    "browser-sync": "^2.26.3",
     "gulp-cssmin": "^0.2.0",
     "gulp-imagemin": "^5.0.3",
     "gulp-jade": "^1.1.0",
