@@ -54,19 +54,7 @@
     }
   }
   &__btn {
-    display: block;
-    width: 170px;
-    height: 40px;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    background: #ff5757;
-    border-radius: 20px;
     margin: 50px 0 0;
-    line-height: 40px;
-    text-align: center;
-    color: #fff;
-    text-decoration: none;
     @include sm(margin, 22px auto 30px);
     &:hover, &:active {
       opacity: 0.9;

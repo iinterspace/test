@@ -38,18 +38,7 @@
     float: right;
   }
   &__btn {
-    display: block;
-    background: #ff5757;
-    border: none;
-    color: #fff;
-    width: 170px;
-    height: 40px;
-    text-transform: uppercase;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 700;
     margin: 0 auto 150px;
-    text-align: center;
     position: relative;
     top: 40px;
     @include md(top, 10px);

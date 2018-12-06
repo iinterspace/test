@@ -5,3 +5,19 @@
 body {
   overflow-x: hidden;
 }
+.btn {
+  display: block;
+  border: none;
+  width: 170px;
+  height: 40px;
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #ff5757;
+  border-radius: 20px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  font-weight: 700;
+  color: #fff;
+}
